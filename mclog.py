@@ -2,7 +2,7 @@ import time
 import os
 
 #FILL IN WITH YOUR CLIENT'S LOG PATH
-log_path = "C:/Users/boncz/AppData/Roaming/.minecraft/logs/latest.log"
+log_path = os.path.join(os.path.expanduser("~"), "AppData", "Roaming", ".minecraft", "logs", "latest.log").replace("\\", "/")
 
 #filter messages with these words in it
 use_filter = False
